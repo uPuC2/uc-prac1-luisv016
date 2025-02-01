@@ -10,6 +10,7 @@ Examples code
   alterando unicamente el valor anterior utilizando los operadores bitwise.
   Todas las conversiones deberian ser posibles con una sola operacion
 */
+*/prueba para ver si si se guardan los cambio*/
 int main()
 {
     uint16_t a = 0;
