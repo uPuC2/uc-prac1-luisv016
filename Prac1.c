@@ -10,7 +10,7 @@ Examples code
   alterando unicamente el valor anterior utilizando los operadores bitwise.
   Todas las conversiones deberian ser posibles con una sola operacion
 */
-*/prueba para ver si si se guardan los cambio*/
+
 int main()
 {
     uint16_t a = 0;
@@ -30,7 +30,20 @@ int main()
 //    1011 0000 1011 0000  (valor que se desea)
     a |= (1<<15) | (3<<12) | (1<<7) | (3<<4);
     printf("\na = %X", a);
-    
+     a |= (1<<11) | (1<<9) | (1<<3) | (1<<1);
+    printf("\na = %X", a);
+    a |= (1<<10) | (1<<2);
+    printf("\na = %X", a);
+    a ^= (1<<14)|(1<<7|(3<<4)|(7<<1));
+    printf("\na = %X", a);
+    a |= (1<<7) | (1<<5) | (1<<3) | (1<<1);
+    printf("\na = %X", a);
+    a ^= (1<<15)|(7<<12)|(1<<11)|(7<<8)|(1<<7)|(7<<4)|(1<<3)|7;
+    printf("\na = %X", a);
+    a ^= (1<<8)|(1<<6)|(1<<4)|(1<<2);
+    printf("\na = %X", a);
+     a ^= (1<<8)|(1);
+    printf("\na = %X", a);
 //2 BABA
 //3 BEBE
 //4 FE00
